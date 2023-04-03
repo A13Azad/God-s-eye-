@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#Group%20Members -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SRS</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="./SRS_files/sds.css">
+<link rel="stylesheet" href="./SRS_files/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./SRS_files/bootstrap.min.css">
+
+
+</head>
+<body>
+
+
+<header>
+<h2>Softwere Design Specification</h2><h3>For<br>"Gods Eye"</h3><br><h5><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#Group%20Members">Group Members</a></h5>
+</header>
+
+<section>
+
+  <nav>
+
+    <ul>
+    <h4><ins>Table of Contents</ins></h4>
+    <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#1.1%20Purpose"><h4><ins>1.Introduction</ins></h4></a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#1.1%20Purpose">1.1 Purpose</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#1.2%20Document%20Conventions">1.2 Document Conventions</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#1.3%20Intended%20Audience%20and%20Reading%20Suggestions">1.3 Intended Audience and Reading Suggestions</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#1.4%20Product%20Scope">1.4 Product Scope</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#1.5%20References">1.5 References</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#2.1%20Product%20Perspective"><h4><ins>2.Overall Description</ins></h4></a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#2.1%20Product%20Perspective">2.1 Product Perspective</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#2.2%20Product%20Functions">2.2 Product Functions</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#2.3%20User%20Classes%20and%20Characteristics">2.3 User Classes and Characteristics</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#2.4%20Operating%20Environment">2.4 Operating Environment</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#2.5%20Design%20and%20Implementation%20Constraints">2.5 Design and Implementation Constraints</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#2.6%20User%20Documentation">2.6 User Documentation</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#2.7%20Assumptions%20and%20Dependencies">2.7 Assumptions and Dependencies</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#3.1%20User%20Interfaces"><h4><ins>3.External Interface Requirements</ins></h4></a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#3.1%20User%20Interfaces">3.1 User Interfaces</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#3.2%20Hardware%20Interfaces">3.2 Hardware Interfaces</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#3.3%20Software%20Interfaces">3.3 Software Interfaces</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#3.4%20Communications%20Interfaces">3.4 Communications Interfaces</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#4.1%20System%20Feature%201"><h4><ins>4.System Feature</ins></h4></a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#4.1%20System%20Feature%201">4.1 System Feature 1</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#4.2%20System%20Feature%202%20(and%20so%20on)">4.2 System Feature 2 (and so on)</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#5.1%20Performance%20Requirements"><h4><ins>5.Other Nonfunctional Requirements</ins></h4></a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#5.1%20Performance%20Requirements">5.1 Performance Requirements</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#5.2%20Safety%20Requirements">5.2 Safety Requirements</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#5.3%20Security%20Requirements">5.3 Security Requirements</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#5.4%20Software%20Quality%20Attributes">5.4 Software Quality Attributes</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#5.5%20Business%20Rules">5.5 Business Rules</a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#6.Other%20Requirements"><h4><ins>6.Other Requirements</ins></h4></a></li>
+      <li><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#"></a></li>
+    </ul>
+  </nav>
+  
+  <div class="main">
+  <article>
+    <h1 id="1.1 Purpose"><ins>1.Introduction</ins><br><br>1.1 Purpose</h1>
+    <p>In the digital age, eBook reader apps have replaced conventional printed books. Now you can simply read your favorite book on your smartphone or tablet by downloading apps on your Android device. Several of the eBook apps even provide hundreds of free books. With these apps, you can quickly search for a book of your choice and start reading them right away. You no longer have to visit physical stores to buy books. But in our project, we are going to build eBook reading with the ability to monitor students by teachers. Teachers can upload their study materials as pdf and the students can read those pdfs. The interesting part is that the teachers will know how much that student read. Using the eye detection, the apps can monitor is the student is reading or not. This is the main features of our project.</p>
+    
+  </article>
+  
+  <article>
+  <h1 id="1.2 Document Conventions">1.2 Document Conventions</h1>
+  <p>The document contains a few conventions such as- <br>
+	Student: the user type which will read eBooks and read data. <br>
+	Teacher: The user type that will be able to observe student’s activity through the software and upload eBooks/PDF
+</p>
+  </article>
+    <article>
+  <h1 id="1.3 Intended Audience and Reading Suggestions">1.3 Intended Audience and Reading Suggestions</h1>
+  <p>This document is intended for anyone in the development, managing and working for This software. The SRS contains product descriptions, interface requirements and other non-functional requirements. Readers are requested to read the SRS in the given sequence.</p>
+  </article>
+  
+  <article>
+  <h1 id="1.4 Product Scope">1.4 Product Scope</h1>
+  <p>The purpose of this software to monitor the students and keep track of the student’s study. The teacher user will be able to upload eBook/PDF and monitor the activities of students such as how many pages the student has gone through and how much time they have studied. In order to check whether the reader is the intended student the software will run a face recognition of the reader. And also check whether the eye is open or not. The student will be able to read the eBooks/PDF file which will be uploaded into the software from the teachers. The student will also have their face data stored for recognition.</p>
+  </article>
+    
+  <article>
+  <h1 id="1.5 References">1.5 References</h1>
+  <p>https://www.getomnify.com/use-case/soccer-scheduling-software</p>
+  </article>
+    
+  <article>
+  <h1 id="2.1 Product Perspective"><ins>2.Overall Description</ins><br><br>2.1 Product Perspective</h1>
+  <p></p><li>This eReader application is a student’s tool for mastering reading assignments. This application offers an alternative reading methodology that makes reading focused and easy.</li>
+
+ <li>This is a virtual platform where, Teachers and students can be in here together at a time. </li>
+
+<li>Teachers can sends PDFs to their studests and can customize the reading experience for each student and track their improvement over time.</li>
+
+<li>By using this application, Teacher can easily monitor their students, while they are reading or not or how much time his/her students holds their consentration.</li>
+
+<li>Removing the eye movements associated with traditional reading methods not only reduces the number of times your eyes move when reading, but also decreases the number of times your eyes must pass over a word for your brain to understand it. This makes extremely efficient, precise, convenient and comfortable.</li>
+<p></p>
+  </article>
+    
+  <article>
+  <h1 id="2.2 Product Functions">2.2 Product Functions</h1>
+  <p></p><li>Register here to use the website.</li>
+<li>Teachers Can connect with other students through the account here. </li>
+<li>Teachers can get notified about students inattentional activity.</li>
+<li>Both Can create events, if they want! They also can invite others.</li>
+<p></p>
+  </article>
+    
+  <article>
+  <h1 id="2.3 User Classes and Characteristics">2.3 User Classes and Characteristics</h1>
+  <p><br></p><h4>There’ll be these classes.</h4><br>
+<li>User class, admin class </li>
+
+<br><h4>Characteristics:</h4><br>
+
+<br>User Class:<br> <br>
+
+<li>Search Teachers, Search Students.</li>
+<li>Send friend request. </li>
+<li>Teacher can sends PDFs, Student can read those.</li>
+<li>Teachers can get notified about students inattentional activity.</li>
+<li>Message others.</li>
+<li>Create events.</li>
+
+<br>Admin:<br> <br>
+
+<li>Full access to the website. </li>
+<li>Can do crude everything.</li>
+<p></p>
+  </article>
+    
+  <article>
+  <h1 id="2.4 Operating Environment">2.4 Operating Environment</h1>
+  <p>This is a web based application, which can be run on any device as long as it has internet connection and the web application server is up.</p>
+  </article>
+    
+  <article>
+  <h1 id="2.5 Design and Implementation Constraints">2.5 Design and Implementation Constraints</h1>
+  <p>Backend coding will only be using python(django) and will be using mysql database (Mysqldb). </p>
+  </article>
+    
+  <article>
+  <h1 id="2.6 User Documentation">2.6 User Documentation</h1>
+  <p></p><li>User will need to sign up to use the web application.</li>
+<li>User will need to login. </li>
+<li>User can see available students or teachers.</li>
+<li>User can upload PDFs.</li>
+<li>User can read PDFs </li>
+<li>User can create events. </li>
+<li>User can search for more users. </li>
+<li>User can add other users. </li>
+<li>User can chat with other users. </li>
+<li>User (Teachers) can get notified about students inattentional activity. </li>
+<li>User can log out. </li> 
+<p></p>
+  </article>
+    
+  <article>
+  <h1 id="2.7 Assumptions and Dependencies">2.7 Assumptions and Dependencies</h1>
+  <p>List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).</p>
+  </article>
+    
+  <article>
+  <h1 id="3.1 User Interfaces"><ins>3.External Interface</ins><br><br>3.1 User Interfaces</h1>
+  <p>     The main object will be to create a user friendly interface. We’ll be using html, css, bootstrap/ and for the backend we’ll be using python (framework -&gt; Django)
+  <br><img src="./SRS_files/uml.jpeg"><br>
+The design has not been finalized yet but the basic concept will be
+</p><li>Registration page (where the user can register as students or teachers) </li>
+
+<li>Login page (where the user can login, if the login is successful the user will be directed to the loading page else an error will pop up in the login page.) </li>
+
+<li>Landing page (Some playground will be show and online users will be shown active, there’ll be a search bar to find PDFs which will redirected to the search user page, there will be a navigation bar with basic operations and a logout button which will redirect the user to the login page.) </li>
+<li>Search PDFs (where the searched PDFs will be displayed, if not the closest thing will be displayed.) </li>
+<li>Search User page (here people can search any other users. Where searched user will be displayed, if exist.) </li>
+<p></p>
+  </article>
+    
+  <article>
+  <h1 id="3.2 Hardware Interfaces">3.2 Hardware Interfaces</h1>
+  <p>This will temporarily be hosted in a local-host server but originally all we need is a server to store the application and a device connected with the internet to access.</p>
+  </article>
+    
+  <article>
+  <h1 id="3.3 Software Interfaces">3.3 Software Interfaces</h1>
+  <p>This has not been implemented yet but we will be using.
+</p><li>Database -&gt; mysql </li>
+<li>DS -&gt; any. </li>
+<li>Tools -&gt; HTML, CSS, bootstrap, PHP, Django, python, jinja2.</li>
+<p></p>
+  </article>
+    
+  <article>
+  <h1 id="3.4 Communications Interfaces">3.4 Communications Interfaces</h1>
+  <p>The entire communication will take place inside the website via chat, all the messages will not be accessable without an active session.</p>
+  </article>
+    
+  <article>
+  <h1 id="4.1 System Feature 1"><ins>4.System Feature</ins><br><br>4.1 System Feature 1</h1>
+  <p></p><li>Registration page, where the user can register as a student or as a teacher. (high priority)</li>
+
+   4.1.2
+
+<li>Fill in the credentials. </li>
+<li>Press the sign up buttons. </li>
+<li>User will be signed up. </li>
+4.1.3
+<li>If any required credential is empty or wrong, then there will be error message.</li>
+<p></p>
+  </article>
+    
+  <article>
+  <h1 id="4.2 System Feature 2 (and so on)">4.2 System Feature 2 (and so on)</h1>
+  <p>4.2.1<br>
+Login page (where the user can login, if the login is successful the user will be directed to the loading page else an error will pop up in the login page.) (High priority)<br>
+
+4.2.2
+</p><li>Fill in the credentials </li>
+<li>Press the Log in buttons. </li>
+<li>User will be logged in. </li>
+
+<br> 
+
+4.3<br>
+Landing page (A reader is reading type photo will be shown. Online users will be shown active. There’ll be a search bar to find teachers and students, which will redirected to the search user page, there will be a navigation bar with basic operations and a logout button which will redirect the user to the login page.) (High priority)<br>4.3.1
+<li>Search bar credential filled and clicked. </li>
+<li>Redirected to the search teachers and student background. </li>
+<br>
+4.4<br>
+  
+Search PDF's Page (where the searched book will be displayed, if not, the closest thing will be displayed.) (Low priority)
+
+<br>4.5<br>
+  Search User page (here people can search any other users. Where searched user will be displayed, if exist.) (Medium priority).
+<li>Add user. </li>
+<li>Delete user. </li>
+<br>4.6<br>
+      AI (Medium priority).
+<li>AI will be used in the given PDF's, where user’s eye can be tracked. When a student will click his/her teachers PDFs, AI will count students eye movement through the devices camara. And all information will be sent his/her teacher, that how much time a student holds his/her consentration on that PDF's each page. Whenever a student moves his/her eyes from PDFs page, teacher will get notified. </li>
+<p></p>
+  </article>
+    
+  <article>
+  <h1 id="5.1 Performance Requirements"><ins>5.Other Nonfunctional Requirements</ins><br><br>5.1 Performance Requirements</h1>
+  <p>    In order to assess the performance of a system the following
+must be clearly specified:
+</p><li> Response Time (The application should load in less than
+0.1second at all time)</li>
+<li>Workload (The system should be capable of supporting
+80,000 users)</li>
+<li>Scalability</li>
+<li>Platform</li><p></p>
+  </article>
+    
+  <article>
+  <h1 id="5.2 Safety Requirements">5.2 Safety Requirements</h1>
+  <p>The necessary data will be stored in another database or file in case of emergency. If there is a loss/damage/harm to the web application, the important data can be found in the secondary database.</p>
+  </article>
+      
+  <article>
+  <h1 id="5.3 Security Requirements">5.3 Security Requirements</h1>
+  <p>Core Security Requirement:
+</p><li>Confidentiality</li>
+<li>Integrity</li>
+<li>Availability</li>
+<li>Authentication</li>
+<li>Authorization</li>
+<li>Accountability</li><p></p>
+<br>
+<p>General Security Requirement:
+</p><li>Session Management</li>
+<li>Error Management</li>
+<li>Configuration Management</li>
+<br>
+<p>Operational Security Requirement:
+</p><li>Deployment Environment</li>
+<li>Archiving</li>
+<li>Anti-Piracy</li>
+<br>
+<p>Secure this software to protect information of all users like, user
+email address, pdf file, password, hacker etc.
+It should be strong and efficient.</p>
+
+  </article>
+      
+  <article>
+  <h1 id="5.4 Software Quality Attributes">5.4 Software Quality Attributes</h1>
+  <p>This software needs Reliability, Adequacy, Learnability,
+Robustness, Maintainability, Readability, Extensibility, Testability,
+Efficiency (time, storage, transmission channels, and peripherals).</p>
+  </article>
+      
+  <article>
+  <h1 id="5.5 Business Rules">5.5 Business Rules</h1>
+  <p>Register is must then keep a unique id both teacher and student.
+A teacher can add students by creating different section and can
+commit pdf at individual system. Student can send request
+specific teacher by searching teacher’s id. This software provides
+student portal and teacher portal. It helps reducing time wasting
+for students and easy to monitor a student for teacher. It will
+ensure reading time by tracking student’s eyes.
+</p>
+  </article>
+      
+  <article>
+  <h1 id="6.Other Requirements"><ins>6.Other Requirements</ins></h1>
+  <p>There will be 
+</p><li>Use case diagram. </li>
+<li>ER diagram (Mysql database). </li>
+<li>Class diagram. </li>
+
+<p></p>
+  </article>
+      
+  <article>
+  <h1 id=""></h1>
+  <p></p>
+  </article>
+      
+    
+</div></section>
+
+
+<footer>
+  
+    <h1 id="Group Members"><ins>Group Members</ins></h1>
+    <p><a><br>Asab -Uzzaman Azad - 1521498042</a><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#"></a></p><p><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#"> </a></p><a href="file:///D:/Study/14th%20Semester/CSE327/project/fall2019.cse327.2.t3/SRS.html#"><i class="fas fa-cannabis"></i></a><p></p>
+    
+</footer>
+
+
+
+</body></html>
